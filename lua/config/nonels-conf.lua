@@ -6,7 +6,7 @@ nonels.setup({
 
     --Formaters
     nonels.builtins.formatting.stylua,
-    nonels.builtins.formatting.black,
+    nonels.builtins.formatting.black_client,
     nonels.builtins.formatting.prettierd,
 
     --linters
