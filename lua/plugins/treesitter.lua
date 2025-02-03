@@ -7,6 +7,7 @@ return {
       config.setup({
         ensure_installed = { "lua", "javascript" },
         highlight = true,
+        sync_install = false,
         indent = true,
       })
     end,
