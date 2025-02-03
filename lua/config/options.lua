@@ -1,5 +1,6 @@
 local opt = vim.opt
 
+vim.cmd.colorscheme("catppuccin")
 opt.autowrite = true
 opt.number = true
 opt.clipboard = "unnamedplus"
