@@ -17,6 +17,7 @@ return {
 					"bashls",
 					"html",
 					"htmx",
+					"cssls",
 					"ts_ls",
 					"pyright",
 					"pylsp",
@@ -43,6 +44,10 @@ return {
 			lspconfig.pyright.setup({ capabilities = lsp_capabilities })
 			lspconfig.pylsp.setup({ capabilities = lsp_capabilities })
 			lspconfig.vimls.setup({ capabilities = lsp_capabilities })
+			lspconfig.dockerls.setup({ capabilities = lsp_capabilities })
+			lspconfig.bashls.setup({ capabilities = lsp_capabilities })
+			lspconfig.cssls.setup({ capabilities = lsp_capabilities })
+			lspconfig.nginx_language_server.setup({ capabilities = lsp_capabilities })
 		end,
 	},
 }
