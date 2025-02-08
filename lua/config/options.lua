@@ -1,6 +1,6 @@
 local opt = vim.opt
 
-vim.cmd.colorscheme("catppuccin")
+vim.cmd.colorscheme("tokyonight-night")
 opt.autowrite = true
 opt.number = true
 opt.clipboard = "unnamedplus"

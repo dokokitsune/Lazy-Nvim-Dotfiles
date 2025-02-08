@@ -25,6 +25,7 @@ return {
 					"clangd",
 					"vimls",
 					"dockerls",
+					"taplo",
 				},
 			})
 		end,
@@ -48,6 +49,7 @@ return {
 			lspconfig.bashls.setup({ capabilities = lsp_capabilities })
 			lspconfig.cssls.setup({ capabilities = lsp_capabilities })
 			lspconfig.nginx_language_server.setup({ capabilities = lsp_capabilities })
+			lspconfig.taplo.setup({ capabilities = lsp_capabilities })
 		end,
 	},
 }
