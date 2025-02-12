@@ -28,11 +28,19 @@ return {
 			require("telescope").load_extension("ui-select")
 		end,
 	},
+	--fzf plugin
 	{
 		"nvim-telescope/telescope-fzf-native.nvim",
 		build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release",
 		config = function()
 			require("telescope").load_extension("fzf")
+		end,
+	},
+	--Git Branch
+	{
+		"mrloop/telescope-git-branch.nvim",
+		config = function()
+			require("telescope").load_extension("git_branch")
 		end,
 	},
 }

@@ -10,6 +10,12 @@ return {
     },
     config = function()
       vim.keymap.set("n", "<leader>n", ":Neotree filesystem reveal left<CR>", { desc = "Neotree Open Left Side" })
+      vim.keymap.set(
+        "n",
+        "<leader>g",
+        ":Neotree float git_status git_base=main<CR>",
+        { desc = "Neotree float git status for 'main'" }
+      )
     end,
   },
 }
