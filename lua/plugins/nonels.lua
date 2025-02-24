@@ -1,4 +1,23 @@
 return {
+  {
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    config = function()
+      require("mason-tool-installer").setup({
+        ensured_installed = {
+          "prettierd",
+          "pyink",
+          "stylua",
+          "yamlfmt",
+          "eslint_d",
+          "stylelint",
+          "cpplint",
+          "pylint",
+          "codespell",
+          "luacheck",
+        },
+      })
+    end,
+  },
 
   {
     "nvimtools/none-ls.nvim",
