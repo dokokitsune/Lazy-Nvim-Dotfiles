@@ -8,7 +8,7 @@ return {
 		},
 		config = function()
 			require("mason-null-ls").setup({
-				ensured_installed = {
+				ensure_installed = {
 					"prettierd",
 					"pyink",
 					"stylua",
