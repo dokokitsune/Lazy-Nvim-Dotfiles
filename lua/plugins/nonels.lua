@@ -1,13 +1,8 @@
 return {
 	{
-		"jay-babu/mason-null-ls.nvim",
-		event = { "BufReadPre", "BufNewFile" },
-		dependencies = {
-			"williamboman/mason.nvim",
-			"nvimtools/none-ls.nvim",
-		},
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
 		config = function()
-			require("mason-null-ls").setup({
+			require("mason-tool-installer").setup({
 				ensure_installed = {
 					"prettierd",
 					"pyink",
