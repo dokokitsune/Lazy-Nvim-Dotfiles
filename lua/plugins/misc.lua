@@ -42,4 +42,17 @@ return {
 			},
 		},
 	},
+	{
+		"karb94/neoscroll.nvim",
+		opts = {},
+		config = function()
+			vim.keymap.set("n", "<ScrollWheelUp>", "<C-y>")
+			vim.keymap.set("n", "<ScrollWheelDown>", "<C-e>")
+			vim.keymap.set("i", "<ScrollWheelUp>", "<C-y>")
+			vim.keymap.set("i", "<ScrollWheelDown>", "<C-e>")
+			vim.keymap.set("v", "<ScrollWheelUp>", "<C-y>")
+			vim.keymap.set("v", "<ScrollWheelDown>", "<C-e>")
+			require("neoscroll").setup({})
+		end,
+	},
 }
