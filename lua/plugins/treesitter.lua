@@ -24,6 +24,7 @@ return {
           "dockerfile",
           "tsx",
           "gitignore",
+          "terraform",
           "hcl",
         },
         highlight = true,

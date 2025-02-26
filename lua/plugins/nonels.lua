@@ -25,12 +25,14 @@ return {
 		config = function()
 			local config = require("null-ls")
 			config.setup({
+				debug = true,
 				sources = {
 
 					--Formaters
 					config.builtins.formatting.stylua, --Lua
 					config.builtins.formatting.pyink, --Python 2, 3
 					config.builtins.formatting.prettierd,
+					config.builtins.formatting.terraform_fmt,
 
 					--linters
 					require("none-ls.diagnostics.eslint_d"),
@@ -45,7 +47,7 @@ return {
 				},
 			})
 			vim.api.nvim_create_autocmd("BufWritePre", {
-				pattern = { "*.lua", "*.py", "*.js", "*.ts", "*.tsx", "*.jsx", "*.yaml", "*.json", "*.yml" },
+				pattern = { "*.lua", "*.py", "*.js", "*.ts", "*.tsx", "*.jsx", "*.yaml", "*.json", "*.yml", "*.tf" },
 				callback = function()
 					vim.lsp.buf.format({ async = false })
 				end,
