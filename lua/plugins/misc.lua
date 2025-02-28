@@ -42,6 +42,7 @@ return {
 			},
 		},
 	},
+	--Neoscroll
 	{
 		"karb94/neoscroll.nvim",
 		opts = {},
@@ -53,6 +54,14 @@ return {
 			vim.keymap.set("v", "<ScrollWheelUp>", "<C-y>")
 			vim.keymap.set("v", "<ScrollWheelDown>", "<C-e>")
 			require("neoscroll").setup({})
+		end,
+	},
+
+	--Ghostty Support
+	{
+		"isak102/ghostty.nvim",
+		config = function()
+			require("ghostty").setup()
 		end,
 	},
 }
