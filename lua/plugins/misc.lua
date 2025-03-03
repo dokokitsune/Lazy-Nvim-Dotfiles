@@ -64,4 +64,30 @@ return {
 			require("ghostty").setup()
 		end,
 	},
+
+	--Indent
+	{
+		"nvimdev/indentmini.nvim",
+		config = function()
+			require("indentmini").setup() -- use default config
+		end,
+	},
+	--Smooth Cursor
+
+	{
+		"gen740/SmoothCursor.nvim",
+		config = function()
+			require("smoothcursor").setup()
+		end,
+	},
+	--Smear Cursor
+	{
+		"sphamba/smear-cursor.nvim",
+		opts = {},
+		config = function()
+			require("smear_cursor").setup({
+				cursor_color = "#d3cdc3",
+			})
+		end,
+	},
 }
